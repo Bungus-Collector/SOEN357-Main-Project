@@ -1,6 +1,6 @@
 # SOEN 357 Main Project
 
-Welcome to our main project for SOEN 357: FitTrack, your all-in-one fitness tracker app!
+Welcome to our main project for SOEN 357: FitHealth, your all-in-one fitness tracker app!
 
 To run in local on Android:
 - Have your Android emulator running
