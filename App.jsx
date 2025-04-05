@@ -5,13 +5,15 @@
  */
 
 import React from 'react';
-import {View, Text} from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+// import LandingPage from './components/LandingPage/LandingPage';
+import MainNavigation from './navigation/MainNavigation';
 
 const App = () => {
   return (
-    <View>
-      <Text>Hello world</Text>
-    </View>
+    <NavigationContainer>
+      <MainNavigation />
+    </NavigationContainer>
   );
 };
 
