@@ -33,7 +33,7 @@ const LandingPage = ({navigation}) => {
         />
         <Text style={LandingStyles.ForgotPassword} onPress={() => {navigation.navigate(Routes.ForgotPassword);}}>Forgot password</Text>
         <View style={LandingStyles.ContainerCenter}>
-            <TouchableOpacity style={LandingStyles.ButtonDefault} title="Log in" onPress={() => null}>
+            <TouchableOpacity style={LandingStyles.ButtonDefault} title="Log in" onPress={() => {navigation.navigate(Routes.Home);}}>
                 <Text style={LandingStyles.ButtonDefaultText}>Log in</Text>
             </TouchableOpacity>
             <TouchableOpacity style={LandingStyles.ButtonDefault} title="Sign up" onPress={() => {navigation.navigate(Routes.Signup);}}>

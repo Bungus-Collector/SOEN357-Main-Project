@@ -15,7 +15,7 @@ export default StyleSheet.create({
         justifyContent: 'center',
         textAlignVertical: 'center',
         alignItems: 'center',
-        flex: 2,
+        flex: 1,
     },
     HeaderText: {
         fontSize: 24,
@@ -24,7 +24,7 @@ export default StyleSheet.create({
     },
     BodyArea: {
         textAlignVertical: 'center',
-        flex: 3,
+        flex: 4,
         margin: '10%',
         marginTop: '15%',
     },
@@ -63,9 +63,11 @@ export default StyleSheet.create({
         textAlign: 'center',
         padding: 18,
     },
-    ForgotPassword: {
-        color: 'grey',
-        textDecorationLine: 'underline',
-        marginBottom: 25,
+    Checkbox: {
+        alignSelf: 'center',
+    },
+    Label: {
+        marginBottom: 15,
+        color: '#FFFFFF',
     },
 });
