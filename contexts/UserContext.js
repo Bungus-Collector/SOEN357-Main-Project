@@ -17,24 +17,21 @@ export const UserProvider = ({ children }) => {
         name: 'One billion push ups',
         description: 'Attempt if you dare',
         reward: 1000,
+        challenge: true,
       },
       {
         id: 2,
         name: '500 Total Reps',
         description: 'For only the most swole!',
         reward: 500,
-      },
-      {
-        id: 2,
-        name: '500 Total Reps',
-        description: 'For only the most swole!',
-        reward: 200,
+        challenge: true,
       },
       {
         id: 3,
         name: '1000 Total Reps',
         description: 'For only the most swole!',
-        reward: 100,
+        reward: 200,
+        challenge: true,
       },
     ],
   });

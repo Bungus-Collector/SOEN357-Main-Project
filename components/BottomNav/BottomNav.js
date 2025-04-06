@@ -21,7 +21,7 @@ const BottomNav = ({navigation}) => {
                 </TouchableOpacity>
             </View>
             <View style={BottomNavStyles.Icon}>
-                <TouchableOpacity style={BottomNavStyles.TouchableIcon} onPress={() => {navigation.navigate(Routes.Goals);}}>
+                <TouchableOpacity style={BottomNavStyles.TouchableIcon} onPress={() => {navigation.navigate(Routes.Progress);}}>
                     <Image source={require('../../static/images/progress.png')} style={BottomNavStyles.IconImage}/>
                     <Text style={BottomNavStyles.BottomNavText}>My Progress</Text>
                 </TouchableOpacity>

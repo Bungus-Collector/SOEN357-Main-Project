@@ -4,6 +4,10 @@ export const Routes = {
     ForgotPassword: 'ForgotPassword',
     Home: 'Home',
     Profile: 'Profile',
-    Goals: 'Goals',
+    Progress: 'Progress',
     Devices: 'Devices',
+    Goals: 'Goals',
+    Workouts: 'Workouts',
+    NewReminder: 'NewReminder',
+    Meals: 'Meals',
 };
