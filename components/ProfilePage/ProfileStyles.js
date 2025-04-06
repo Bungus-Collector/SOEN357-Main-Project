@@ -17,6 +17,7 @@ export default StyleSheet.create({
         color: 'white',
         position: 'absolute',
         bottom: 0,
+        fontWeight: 'bold',
     },
     BodyArea: {
         flex: 3,

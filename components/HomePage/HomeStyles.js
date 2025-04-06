@@ -23,6 +23,7 @@ export default StyleSheet.create({
         color: 'white',
         position: 'absolute',
         bottom: 0,
+        fontWeight: 'bold',
     },
     BodyArea: {
         textAlignVertical: 'center',
@@ -34,12 +35,6 @@ export default StyleSheet.create({
         fontSize: 16,
         color: 'white',
         textAlignVertical: 'center',
-    },
-    BottomNav: {
-        justifyContent: 'center',
-        alignItems: 'center',
-        flex: 1,
-        backgroundColor: '#3B5249',
     },
     FooterText: {
         color: 'grey',
@@ -54,22 +49,35 @@ export default StyleSheet.create({
         padding: 10,
     },
     ButtonDefault: {
-        height: 70,
-        width: '80%',
-        marginTop: 12,
+        height: 90,
+        width: '100%',
         backgroundColor: '#A4B494',
         borderRadius: 25,
+        margin: 15,
     },
     ButtonDefaultText: {
         color: '#000000',
         fontSize: 24,
-        textAlign: 'center',
-        padding: 18,
+        textAlign: 'right',
+        padding: 28,
     },
-    ForgotPassword: {
-        color: 'grey',
-        textDecorationLine: 'underline',
-        marginBottom: 25,
-        width: '40%',
+    ButtonIcon: {
+        position: 'absolute',
+        top: 20,
+        left: 20,
+        height: 50,
+        width: 50,
+    },
+    ReminderArea: {
+        backgroundColor: '#519872',
+        borderRadius: 18,
+        marginTop: 20,
+        height: 200,
+        width: '100%',
+        padding: 15,
+    },
+    ReminderText: {
+        color: '#FFFFFF',
+        fontSize: 16,
     },
 });

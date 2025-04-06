@@ -6,6 +6,7 @@ import {
   Image,
   TextInput,
   TouchableOpacity,
+  Alert,
 } from 'react-native';
 import LandingStyles from './LandingStyles';
 import LogoStyles from '../../static/images/LogoStyles';
@@ -14,12 +15,32 @@ import { UserContext } from '../../contexts/UserContext';
 
 const LandingPage = ({navigation}) => {
   const { setUser } = useContext(UserContext);
-  const [input, setInput] = useState('');
+  const [usernameInput, setUsernameInput] = useState('');
+  const [passwordInput, setPasswordInput] = useState('');
 
   const handleSubmit = () => {
+    if(usernameInput === ''){
+      Alert.alert('Incomplete login', 'Please enter your username!', [
+        {
+          text: 'Ok',
+        },
+      ],
+      { cancelable: true });
+      return null;
+    }
+    if(passwordInput === ''){
+      Alert.alert('Incomplete login', 'Please enter your password!', [
+        {
+          text: 'Ok',
+        },
+      ],
+      { cancelable: true });
+      return null;
+    }
+
     setUser(prev => ({
       ...prev,
-      username: input,
+      username: usernameInput,
     }));
     navigation.navigate(Routes.Home);
   };
@@ -37,13 +58,15 @@ const LandingPage = ({navigation}) => {
         <TextInput
             style={LandingStyles.TextInput}
             placeholder="Username"
-            value={input}
-            onChangeText={setInput}
+            value={usernameInput}
+            onChangeText={setUsernameInput}
         />
         <TextInput
             style={LandingStyles.TextInput}
             placeholder="Password"
             secureTextEntry={true}
+            value={passwordInput}
+            onChangeText={setPasswordInput}
         />
         <Text style={LandingStyles.ForgotPassword} onPress={() => {navigation.navigate(Routes.ForgotPassword);}}>Forgot password</Text>
         <View style={LandingStyles.ContainerCenter}>

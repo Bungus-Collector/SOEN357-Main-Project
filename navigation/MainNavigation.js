@@ -5,7 +5,7 @@ import SignupPage from '../components/SignupPage/SignupPage';
 import ForgotPassword from '../components/ForgotPasswordPage/ForgotPasswordPage';
 import Home from '../components/HomePage/HomePage';
 import Profile from '../components/ProfilePage/ProfilePage';
-import Goals from '../components/GoalsPage/GoalsPage';
+import Goals from '../components/ProgressPage/ProgressPage';
 import Devices from '../components/DevicesPage/DevicesPage';
 
 const Stack = createStackNavigator();

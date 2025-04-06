@@ -23,6 +23,7 @@ export default StyleSheet.create({
         color: 'white',
         position: 'absolute',
         bottom: 0,
+        fontWeight: 'bold',
     },
     BodyArea: {
         textAlignVertical: 'center',
@@ -31,45 +32,44 @@ export default StyleSheet.create({
         marginTop: '15%',
     },
     BodyText: {
+        fontSize: 18,
+        color: 'white',
+        textAlignVertical: 'center',
+        fontWeight: 'bold',
+    },
+    DisplayText: {
         fontSize: 16,
         color: 'white',
         textAlignVertical: 'center',
+        marginTop: 15,
     },
-    BottomNav: {
-        justifyContent: 'center',
-        alignItems: 'center',
-        flex: 1,
-        backgroundColor: '#3B5249',
-    },
-    FooterText: {
-        color: 'grey',
-        textAlign: 'center',
-        fontSize: 12,
-    },
-    TextInput: {
-        height: 50,
-        marginTop: 12,
-        backgroundColor: '#FFFFFF',
-        borderWidth: 1,
-        padding: 10,
-    },
-    ButtonDefault: {
+    AddNewButton: {
         height: 70,
-        width: '80%',
+        width: '70%',
         marginTop: 12,
-        backgroundColor: '#A4B494',
+        backgroundColor: '#3B5249',
         borderRadius: 25,
+        marginBottom: 20,
     },
-    ButtonDefaultText: {
-        color: '#000000',
-        fontSize: 24,
-        textAlign: 'center',
-        padding: 18,
+    AddNewButtonText: {
+        color: '#FFFFFF',
+        fontSize: 16,
+        textAlign: 'right',
+        padding: 25,
     },
-    ForgotPassword: {
-        color: 'grey',
-        textDecorationLine: 'underline',
-        marginBottom: 25,
-        width: '40%',
+    Plus: {
+        color: '#FFFFFF',
+        fontSize: 48,
+        position: 'absolute',
+        paddingLeft: 20,
+        top: 2,
+    },
+    FlatList: {
+        width: '100%',
+        height: 150,
+    },
+    WeeklyChallengesFlatList: {
+        width: '100%',
+        height: 180,
     },
 });
