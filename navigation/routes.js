@@ -3,4 +3,7 @@ export const Routes = {
     Signup: 'Signup',
     ForgotPassword: 'ForgotPassword',
     Home: 'Home',
+    Profile: 'Profile',
+    Goals: 'Goals',
+    Devices: 'Devices',
 };

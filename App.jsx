@@ -6,14 +6,16 @@
 
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-// import LandingPage from './components/LandingPage/LandingPage';
 import MainNavigation from './navigation/MainNavigation';
+import { UserProvider } from './contexts/UserContext';
 
 const App = () => {
   return (
-    <NavigationContainer>
-      <MainNavigation />
-    </NavigationContainer>
+    <UserProvider>
+      <NavigationContainer>
+        <MainNavigation />
+      </NavigationContainer>
+    </UserProvider>
   );
 };
 

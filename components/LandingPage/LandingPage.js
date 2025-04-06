@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useContext} from 'react';
 import {
   SafeAreaView,
   Text,
@@ -10,8 +10,17 @@ import {
 import LandingStyles from './LandingStyles';
 import LogoStyles from '../../static/images/LogoStyles';
 import { Routes } from '../../navigation/routes';
+import { UserContext } from '../../contexts/UserContext';
 
 const LandingPage = ({navigation}) => {
+  const { setUsername } = useContext(UserContext);
+  const [input, setInput] = useState('');
+
+  const handleSubmit = () => {
+    setUsername(input);
+    navigation.navigate(Routes.Home);
+  };
+
   return (
     <SafeAreaView style={LandingStyles.AndroidSafeArea}>
       <View style={LandingStyles.HeaderArea}>
@@ -24,7 +33,9 @@ const LandingPage = ({navigation}) => {
         <Text style={LandingStyles.BodyText}>Log in or sign up to continue </Text>
         <TextInput
             style={LandingStyles.TextInput}
-            placeholder="Email"
+            placeholder="Username"
+            value={input}
+            onChangeText={setInput}
         />
         <TextInput
             style={LandingStyles.TextInput}
@@ -33,7 +44,7 @@ const LandingPage = ({navigation}) => {
         />
         <Text style={LandingStyles.ForgotPassword} onPress={() => {navigation.navigate(Routes.ForgotPassword);}}>Forgot password</Text>
         <View style={LandingStyles.ContainerCenter}>
-            <TouchableOpacity style={LandingStyles.ButtonDefault} title="Log in" onPress={() => {navigation.navigate(Routes.Home);}}>
+            <TouchableOpacity style={LandingStyles.ButtonDefault} title="Log in" onPress={handleSubmit}>
                 <Text style={LandingStyles.ButtonDefaultText}>Log in</Text>
             </TouchableOpacity>
             <TouchableOpacity style={LandingStyles.ButtonDefault} title="Sign up" onPress={() => {navigation.navigate(Routes.Signup);}}>
