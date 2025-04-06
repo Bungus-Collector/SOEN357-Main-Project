@@ -6,10 +6,12 @@ import {
 } from 'react-native';
 import GoalsStyles from './GoalsStyles';
 import BottomNav from '../BottomNav/BottomNav';
+import ProfileIcon from '../ProfileIcon/ProfileIcon';
 
 const GoalsPage = ({navigation}) => {
   return (
     <SafeAreaView style={GoalsStyles.AndroidSafeArea}>
+      <ProfileIcon navigation={navigation}/>
       <View style={GoalsStyles.HeaderArea}>
         <Text style={GoalsStyles.HeaderText}>My Progress</Text>
       </View>

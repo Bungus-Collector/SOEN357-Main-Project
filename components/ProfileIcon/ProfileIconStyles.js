@@ -1,17 +1,7 @@
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
-    BottomNav: {
-        justifyContent: 'space-around',
-        alignItems: 'center',
-        backgroundColor: '#3B5249',
-        flexDirection: 'row',
-        position: 'absolute',
-        bottom: 0,
-        height: 150,
-        width: '100%',
-    },
-    BottomNavText: {
+    ProfileIconText: {
         color: '#A4B494',
         textAlign: 'center',
         fontSize: 16,
@@ -27,8 +17,8 @@ export default StyleSheet.create({
     TouchableIcon: {
         alignItems: 'center',
         justifyContent: 'center',
-    },
-    FlexPadding : {
-        flex: 1.4,
+        position: 'absolute',
+        top: 50,
+        left: 25,
     },
 });

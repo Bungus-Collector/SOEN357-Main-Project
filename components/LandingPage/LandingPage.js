@@ -13,11 +13,14 @@ import { Routes } from '../../navigation/routes';
 import { UserContext } from '../../contexts/UserContext';
 
 const LandingPage = ({navigation}) => {
-  const { setUsername } = useContext(UserContext);
+  const { setUser } = useContext(UserContext);
   const [input, setInput] = useState('');
 
   const handleSubmit = () => {
-    setUsername(input);
+    setUser(prev => ({
+      ...prev,
+      username: input,
+    }));
     navigation.navigate(Routes.Home);
   };
 

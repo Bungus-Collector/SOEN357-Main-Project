@@ -21,6 +21,8 @@ export default StyleSheet.create({
         fontSize: 24,
         textAlign: 'center',
         color: 'white',
+        position: 'absolute',
+        bottom: 0,
     },
     BodyArea: {
         textAlignVertical: 'center',
