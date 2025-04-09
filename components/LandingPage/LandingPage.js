@@ -1,3 +1,7 @@
+/**
+ * Component for the sign in page.
+ */
+
 import React, {useState, useContext} from 'react';
 import {
   SafeAreaView,

@@ -1,3 +1,8 @@
+/**
+ * Component for the profile icon which
+ * redirects to the profile page.
+ */
+
 import React from 'react';
 import {
   Image,

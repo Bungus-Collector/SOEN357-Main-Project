@@ -1,3 +1,8 @@
+/**
+ * Component for the progress page where
+ * users can view their goals and challenges.
+ */
+
 import React, { useContext } from 'react';
 import {
   SafeAreaView,

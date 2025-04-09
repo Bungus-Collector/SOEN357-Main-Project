@@ -1,3 +1,8 @@
+/**
+ * Component for sign up page where
+ * users create a new account.
+ */
+
 import React, { useState, useContext } from 'react';
 import {
   SafeAreaView,

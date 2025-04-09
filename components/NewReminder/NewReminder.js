@@ -1,3 +1,8 @@
+/**
+ * Component for the new reminder page where users
+ * can set new reminders for workouts and meals.
+ */
+
 import React, { useState, useContext } from 'react';
 import {
   SafeAreaView,

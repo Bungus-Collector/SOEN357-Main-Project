@@ -1,3 +1,8 @@
+/**
+ * Context for the current user which stores
+ * data relevant to the current user session.
+ */
+
 import React, { createContext, useState } from 'react';
 
 export const UserContext = createContext();

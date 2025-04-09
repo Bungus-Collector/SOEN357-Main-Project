@@ -1,3 +1,7 @@
+/**
+ * Component for a horizontal line
+ */
+
 import React from 'react';
 import {
     View,

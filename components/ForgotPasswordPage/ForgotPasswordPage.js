@@ -1,3 +1,9 @@
+/**
+ * Component for the forgot password page.
+ * There is no password recovery system
+ * at this time :)
+ */
+
 import React from 'react';
 import {
   SafeAreaView,

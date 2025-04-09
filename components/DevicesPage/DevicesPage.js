@@ -1,3 +1,8 @@
+/**
+ * Component for the devices page where
+ * users can link their smart devices.
+ */
+
 import React, { useContext } from 'react';
 import {
   SafeAreaView,

@@ -1,3 +1,8 @@
+/**
+ * Component for the bottom navigation bar
+ * present on most screens in the app.
+ */
+
 /* eslint-disable react/self-closing-comp */
 import React from 'react';
 import {

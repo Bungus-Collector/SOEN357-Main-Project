@@ -1,3 +1,9 @@
+/**
+ * Component for a goal element for
+ * display on screen. Also used for
+ * challenges.
+ */
+
 import React, { useContext } from 'react';
 import {
   Text,

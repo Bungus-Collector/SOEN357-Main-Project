@@ -1,3 +1,9 @@
+/**
+ * Component for the home page where
+ * the user can navigate to their reminders
+ * and view the next reminder in the day.
+ */
+
 import React, { useContext } from 'react';
 import {
   SafeAreaView,

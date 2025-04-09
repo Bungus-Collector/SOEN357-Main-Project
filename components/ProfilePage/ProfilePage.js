@@ -1,3 +1,8 @@
+/**
+ * Component for the profile page which
+ * displays various user information.
+ */
+
 import React, { useContext } from 'react';
 import {
   SafeAreaView,

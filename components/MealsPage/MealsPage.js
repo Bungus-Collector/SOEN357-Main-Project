@@ -1,3 +1,8 @@
+/**
+ * Component for the meals page where
+ * users can see their set meal reminders.
+ */
+
 import React, { useContext } from 'react';
 import {
   SafeAreaView,

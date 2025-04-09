@@ -1,3 +1,9 @@
+/**
+ * Component for workouts page where
+ * users can view their set workout
+ * reminders.
+ */
+
 import React, { useContext } from 'react';
 import {
   SafeAreaView,

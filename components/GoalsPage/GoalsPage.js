@@ -1,3 +1,8 @@
+/**
+ * Component for the goals page where
+ * users create and track new goals.
+ */
+
 import React, { useState, useContext } from 'react';
 import {
   SafeAreaView,

@@ -1,3 +1,8 @@
+/**
+ * Component for a clickable reminder element
+ * for display on screen.
+ */
+
 import React, { useContext } from 'react';
 import {
   Text,
